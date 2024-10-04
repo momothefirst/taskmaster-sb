@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
-import { LayoutDashboard, FileText } from 'lucide-react';
+import { LayoutDashboard, FileText, UserPlus } from 'lucide-react';
 
 const Sidebar = () => {
   const pathname = usePathname();
@@ -11,6 +11,7 @@ const Sidebar = () => {
   const navItems = [
     { href: '/page1', icon: LayoutDashboard, label: 'Page 1' },
     { href: '/page2', icon: FileText, label: 'Page 2' },
+    { href: '/register', icon: UserPlus, label: 'Register' },
   ];
 
   return (
