@@ -3,15 +3,14 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
-import { LayoutDashboard, FileText, UserPlus } from 'lucide-react';
+import { LayoutDashboard, FileText, UserPlus, LogIn } from 'lucide-react';
 
 const Sidebar = () => {
   const pathname = usePathname();
 
   const navItems = [
     { href: '/page1', icon: LayoutDashboard, label: 'Page 1' },
-    { href: '/page2', icon: FileText, label: 'Page 2' },
-    { href: '/register', icon: UserPlus, label: 'Register' },
+    { href: '/page2', icon: FileText, label: 'Page 2' }
   ];
 
   return (
